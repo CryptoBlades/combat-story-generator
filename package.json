@@ -1,0 +1,32 @@
+{
+  "name": "combat-story-generator",
+  "version": "1.0.0",
+  "description": "a small tool to build a combat story with just two numbers.",
+  "main": "./dist/index.js",
+  "typings": "./dist/src/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "webpack --config webpack.config.js",
+    "test": "ts-node test/test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptoblades/combat-story-generator.git"
+  },
+  "author": "Kyle Kemp <kyle@seiyria.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cryptoblades/combat-story-generator/issues"
+  },
+  "homepage": "https://github.com/cryptoblades/combat-story-generator#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.14",
+    "awesome-typescript-loader": "^3.4.1",
+    "ts-node": "4.1",
+    "typescript": "^4.5.5",
+    "webpack": "3.11"
+  },
+  "dependencies": {
+    "seedrandom": "^3.0.5"
+  }
+}
