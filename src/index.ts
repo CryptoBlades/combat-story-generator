@@ -24,6 +24,7 @@ export interface ICombatStoryResult {
 
 const clone = (obj: any) => JSON.parse(JSON.stringify(obj));
 
+// missing is a static 10% chance
 const getRandomDamageBasedOnPower = (rng: Seedrandom, power: number, powerScalar = 0.2, canMiss = true): number => {
   if(canMiss && rng() < 0.1) return 0;
 

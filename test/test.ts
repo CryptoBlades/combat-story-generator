@@ -24,8 +24,8 @@ console.log();
 
 console.log(formatStory(getCombatStory({
   combatants: [
-    { name: 'Kroge', power: 9999 },
-    { name: 'Seiyria', power: 10000 },
+    { name: 'Player 1', power: 9999 },
+    { name: 'Player 2', power: 10000 },
   ],
   seed: Math.random().toString()
 })))
